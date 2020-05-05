@@ -1,4 +1,5 @@
 <?php
+@ini_set( 'upload_max_size' , '128M' );
 
 // Set host values
 $site_scheme = 'http';
