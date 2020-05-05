@@ -49,10 +49,11 @@ hooks:
       path: project/platform/hooks.deploy.yaml
 
 variables:
-  env: !include project/platform/variables.env.yaml
   php:
     upload_max_filesize: 128M
     memory_limit: 256M
+  env: !include project/platform/variables.env.yaml
+  
 
 # The configuration of scheduled execution.
 crons: !include project/platform/crons.yaml
